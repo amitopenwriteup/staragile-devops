@@ -1,0 +1,20 @@
+- name: awscopy
+  hosts: awshost
+  become: true
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+     src: aws-index.html
+     dest: /var/www/html
+     owner: root
+     group: root
+     mode: '0644'
+- name: azurecopy
+  hosts: azurehost
+  become: true
+  - name: Copy file with owner and permissions
+    ansible.builtin.copy:
+     src: azure-index.html
+     dest: /var/www/html
+     owner: root
+     group: root
+     mode: '0644'
