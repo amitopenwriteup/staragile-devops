@@ -1,0 +1,4 @@
+[awshost]
+ansible_host=ip of aws vm ansible_connection=ssh ansible_user=username
+[azurehost]
+ansible_host=ip of azure vm ansible_connection=ssh ansible_user=username
